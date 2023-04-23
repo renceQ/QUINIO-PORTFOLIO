@@ -140,10 +140,84 @@ nav ul li a:hover{
 
 .main-text {
     width: 400px;
-    margin-left: 100px;
+    margin-left: 50px;
+    margin-top:5px;
+}
+.rotating-text {
+  position: inline-flex;
+  font-family: 'Black Ops One', cursive;
+  margin-left:250px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #2adabc;
+  transform: translateX(-80px)
+}
+.rotating-text p {
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+}
+.rotating-text p .word {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+.rotating-text p .word .letter{
+  transform-origin: center center 25px;
+}
+.rotating-text p .word .letter.out{
+  transform: rotateX(90deg);
+  transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
 
-.main-text h1{
+.rotating-text p .word .letter.in {
+  transition: 0.8s ease;
+}
+
+.rotating-text p .word .letter.behind{
+  transform: rotateX(-90deg);
+}
+
+.w-1 {
+
+  color: #2adabc;
+  font-family: 'Black Ops One', cursive;
+  color: #1c3548;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 60px;
+  color: #2adabc;
+}
+
+.w-2 {
+  color: #27bca3;
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.w-3 {
+  color: #126053;
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+.w-4 {
+  color: #072621;
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+
+/* .main-text h1{
     font-family: 'Black Ops One', cursive;
     position: flex;
     color: #1c3548;
@@ -152,28 +226,30 @@ nav ul li a:hover{
     font-weight: 100;
     font-size: 60px;
     color: #2adabc;
-
-}
+} */
 .main-text h5{
+  margin-top: 70px;
+  position: absolute;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
-    position: absolute;
+    /* position: absolute; */
     align-items: center;
     color: #717577;
-    margin: -5px 0px 2px 0px;
     line-height: 1px;
 }
 .main-text h2{
-    position: absolute;
+  position: absolute;
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     color: #1c3548;
-    margin: 40px 2px 0px 0px;
+    /* margin: 40px 2px 0px 0px; */
+    margin-top:120px;
     line-height: 20px;
 }
 
 .main-text p {
+  margin-top: 90px;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     color: #747474;
